@@ -1,7 +1,9 @@
-class Movie:
-    def __init__(self, name, description, category, authors):
+class MovieModel:
+    def __init__(self, title, description, category, year, rating):
         self.category = category
         self.description = description
-        self.authors = authors
-        self.name = name
-
+        self.year = year
+        self.title = title
+        self.rating = rating
+        
+    def toString(self):
